@@ -1,0 +1,66 @@
+service.name = Pay tax on your Time Machine
+
+site.back = Back
+site.remove = Remove
+site.change = Change
+site.no = No
+site.yes = Yes
+site.continue = Continue
+site.start = Start now
+site.startAgain = Start again
+site.signIn = Sign in
+site.govuk = GOV.UK
+
+date.day = Day
+date.month = Month
+date.year = Year
+date.error.day = day
+date.error.month = month
+date.error.year = year
+
+timeout.title = You’re about to be signed out
+timeout.message = For security reasons, you will be signed out of this service in
+timeout.keepAlive = Stay signed in
+timeout.signOut = Sign out
+
+error.title.prefix = Error:
+error.prefix = Error
+error.summary.title = There is a problem
+
+index.title = Do you own a Time Machine?
+index.heading = Do you own a Time Machine?
+index.guidance = Welcome to your new tax page to declare your Time Machine. Please see the README file for a guide to getting started.
+
+checkYourAnswers.title = Check your answers
+checkYourAnswers.heading = Check your answers
+
+journeyRecovery.continue.title = Sorry, there is a problem with the service
+journeyRecovery.continue.heading = Sorry, there is a problem with the service
+journeyRecovery.continue.guidance = [Add content to explain how to proceed.]
+journeyRecovery.startAgain.title = Sorry, there is a problem with the service
+journeyRecovery.startAgain.heading = Sorry, there is a problem with the service
+journeyRecovery.startAgain.guidance = [Add content to explain why the user needs to start again.]
+
+signedOut.title = For your security, we signed you out
+signedOut.heading = For your security, we signed you out
+signedOut.guidance = We did not save your answers.
+
+unauthorised.title = You can’t access this service with this account
+unauthorised.heading = You can’t access this service with this account
+
+TimeMachine.title = Do you own a Time Machine?
+TimeMachine.heading = Do you own a Time Machine?
+TimeMachine.checkYourAnswersLabel = TimeMachine
+TimeMachine.error.required = Select yes if TimeMachine
+TimeMachine.change.hidden = TimeMachine
+
+
+firstPurchased.title = FirstPurchased
+firstPurchased.heading = FirstPurchased
+firstPurchased.hint = For example, 12 11 2007.
+firstPurchased.checkYourAnswersLabel = FirstPurchased
+firstPurchased.error.required.all = Enter the firstPurchased
+firstPurchased.error.required.two = The firstPurchased must include {0} and {1}
+firstPurchased.error.required = The firstPurchased must include {0}
+firstPurchased.error.invalid = Enter a real FirstPurchased
+firstPurchased.change.hidden = FirstPurchased
