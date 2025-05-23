@@ -15,7 +15,8 @@
  *@
 
 @this(
-    layout: templates.Layout
+    layout: templates.Layout,
+    govukButton: GovukButton
 )
 
 @()(implicit request: Request[_], messages: Messages)
@@ -28,4 +29,10 @@
     <h1 class="govuk-heading-xl">@messages("index.heading")</h1>
 
     <p class="govuk-body">@messages("index.guidance")</p>
+<p class="govuk-body">
+    @govukButton(
+    ButtonViewModel(messages("index.button"))
+    .asLink(routes.TimeMachineController.onPageLoad(models.NormalMode).url)
+    )
+</p>
 }

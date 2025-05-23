@@ -14,35 +14,37 @@
  * limitations under the License.
  *@
 
+@import viewmodels.InputWidth._
+
 @this(
     layout: templates.Layout,
     formHelper: FormWithCSRF,
     govukErrorSummary: GovukErrorSummary,
-    govukDateInput: GovukDateInput,
+    govukInput: GovukInput,
     govukButton: GovukButton
 )
 
 @(form: Form[_], mode: Mode)(implicit request: Request[_], messages: Messages)
 
-@layout(pageTitle = title(form, messages("firstPurchased.title"))) {
+@layout(pageTitle = title(form, messages("brand.title"))) {
 
-    @formHelper(action = routes.FirstPurchasedController.onSubmit(mode), Symbol("autoComplete") -> "off") {
+    @formHelper(action = routes.BrandController.onSubmit(mode)) {
 
         @if(form.errors.nonEmpty) {
-            @govukErrorSummary(ErrorSummaryViewModel(form, errorLinkOverrides = Map("value" -> "value.day")))
+            @govukErrorSummary(ErrorSummaryViewModel(form))
         }
 
-        @govukDateInput(
-            DateViewModel(
-                field  = form("value"),
-                legend = LegendViewModel(messages("firstPurchased.heading")).asPageHeading()
+        @govukInput(
+            InputViewModel(
+                field = form("value"),
+                label = LabelViewModel(messages("brand.heading")).asPageHeading()
             )
-            .withHint(HintViewModel(messages("firstPurchased.hint")))
+            .withWidth(Full)
         )
 
         @govukButton(
             ButtonViewModel(messages("site.continue"))
-.asLink(routes.BrandController.onPageLoad(models.NormalMode).url)
+.asLink(routes.CheckYourAnswersController.onPageLoad().url)
         )
     }
 }

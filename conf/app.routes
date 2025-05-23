@@ -30,3 +30,8 @@ GET        /firstPurchased                  controllers.FirstPurchasedController
 POST       /firstPurchased                  controllers.FirstPurchasedController.onSubmit(mode: Mode = NormalMode)
 GET        /changeFirstPurchased                        controllers.FirstPurchasedController.onPageLoad(mode: Mode = CheckMode)
 POST       /changeFirstPurchased                        controllers.FirstPurchasedController.onSubmit(mode: Mode = CheckMode)
+
+GET        /brand                        controllers.BrandController.onPageLoad(mode: Mode = NormalMode)
+POST       /brand                        controllers.BrandController.onSubmit(mode: Mode = NormalMode)
+GET        /changeBrand                  controllers.BrandController.onPageLoad(mode: Mode = CheckMode)
+POST       /changeBrand                  controllers.BrandController.onSubmit(mode: Mode = CheckMode)
